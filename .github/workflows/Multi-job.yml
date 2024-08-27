@@ -1,0 +1,19 @@
+name: Multiple Job
+on: dispatch-workflow
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Entring First Job
+        run: echo "first Job entring"
+      - name: Exiting First Job
+        run: echo "closing First Job"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Entring Second Jobs
+        run: echo "entring second job"
+      - name: Processing
+        run: echo "Processing second jobs:"
+      - name: Exiting From second job
+        run: echo "existed from second jobs"
