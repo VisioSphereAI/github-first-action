@@ -1,5 +1,5 @@
 name: Multiple Job
-on: dispatch-workflow
+on: workflow-dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
